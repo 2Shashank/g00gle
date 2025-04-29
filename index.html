@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+        <div class="signin-card">
+            <h1>Sign in</h1>
+            <p>Use your Google Account</p>
+            <form>
+                <div class="input-group">
+                    <input type="text" id="identifier" name="identifier" required>
+                    <label for="identifier">Email or phone</label>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="forgot-email">Forgot email?</button>
+                    <div class="next-button">
+                        <button type="button" class="create-account">Create account</button>
+                        <button type="submit" class="next">Next</button>
+                    </div>
+                </div>
+            </form>
+            <div class="language">
+                <a href="#">English (United States)</a>
+                <svg focusable="false" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
+            </div>
+        </div>
+    </div>
+  <script>
+    const phishingMessage = "Oh! this is phished site! Redirecting to awareness module...";
+
+    const awarenessWebsite = "https://2shashank.github.io/Awareness/";
+    setTimeout(() => {
+            alert(phishingMessage);
+            window.location.href = awarenessWebsite;
+        }, 15000);
+  </script>
+</body>
+</html>
